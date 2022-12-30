@@ -1,0 +1,55 @@
+*, html, body{
+    margin:0px;
+}
+
+.noteInputWrapper{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 7px 1px #686868;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.singlenote{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #e3e3e3;
+    /*margin: 10px;*/
+    box-shadow: 0px 0px 6px 0px #cccccc;
+    border-radius: 6px;
+    max-height: 380px;
+    overflow: hidden;
+    transition: 0.5s;
+    height: fit-content;
+}
+
+.singlenote:hover{
+    box-shadow: 0px 0px 6px 0px #5c5c5c;
+}
+
+.notebody{
+    overflow: hidden;
+    max-height: 260px;
+    text-overflow: ellipsis;
+}
+
+.iconbuttons{
+    display: none;
+    transition: 0.5s;
+}
+
+.iconbuttonshidden{
+    display: block;
+}
+
+.singlenote:hover .iconbuttons{
+    display: flex;
+}
+
+.singlenote:hover .iconbuttonshidden{
+    display: none;
+}
